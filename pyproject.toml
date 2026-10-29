@@ -1,0 +1,12 @@
+[project]
+name = "pn532-emulator"
+version = "0.2.0"
+description = "Standalone PN532 NDEF Type 4 tag emulator for Android and iPhone"
+requires-python = ">=3.9"
+dependencies = ["pyserial>=3.5"]
+
+[project.scripts]
+emulator = "emulator:main"
+
+[tool.setuptools]
+py-modules = ["emulator"]
